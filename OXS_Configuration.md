@@ -2,7 +2,7 @@
 
 OXS is using an [Arduino](http://arduino.cc/) board, so download the [Arduino IDE](http://arduino.cc/en/Main/Software#toc2) to use it.
 
-Then, you have to **[download the latest versions](OXS_Downloads.md)** of OpenXsensor and OXS Configurator.
+Then, you have to **[download the latest versions](OXS_Downloads)** of OpenXsensor and OXS Configurator.
 
 Decompress the archives, then place the folder "openXsensor" in your arduino project directory. You can put the folder "OXS\_Configurator\_vx.y" where you want.
 
@@ -125,4 +125,4 @@ The "Preset" folder in the Configurator root is opened by default, but you can p
 ---
 
 
-**next** --> [Vario settings](OXS_Conf_Vario.md)
+**next** --> [Vario settings](OXS_Conf_Vario)

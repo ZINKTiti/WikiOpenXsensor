@@ -1,6 +1,6 @@
 ![OXS_Logo](images/OXS_Logo.png)
 
-# [News](OXS_News.md) - [Downloads](OXS_Downloads.md) - [Documentation](OXS_Documentation.md) #
+# [News](OXS_News) - [Downloads](OXS_Downloads) - [Documentation](OXS_Documentation) #
 
 ## Introduction ##
 

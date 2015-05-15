@@ -129,7 +129,7 @@ _Further details on this subject: http://provideyourown.com/2011/analogwrite-con
   * don't expose the MS5611 pressure sensor to direct light
   * try to put OXS away from air flow, it needs static pressure
   * use some sort of cover (shrink wrap...)
-  * don't forget to **[configure OXS](OXS_Configuration.md)** !
+  * don't forget to **[configure OXS](OXS_Configuration)** !
 
 
 ---

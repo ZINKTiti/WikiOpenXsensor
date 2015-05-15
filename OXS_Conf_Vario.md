@@ -2,7 +2,7 @@
 
 ## Vario settings ##
 
-One or two **[MS5611 barometric sensor](OXS_Build_Vario.md)** can be connected to OXS and provide altitude and vertical speed data.
+One or two **[MS5611 barometric sensor](OXS_Build_Vario)** can be connected to OXS and provide altitude and vertical speed data.
 
 ### RC remote functionalities ###
 
@@ -110,7 +110,7 @@ OXS can also deliver the vertical speed as an analog signal that has to be conne
 
 This can be useful if you have a receiver that has no digital communication pin (D6FR) or if it is already used by another sensor.
 
-**! Additional Hardware is required !**     --     Please read [Analog Climb Rate option](OXS_Build_Vario#With_optional_analog_climb_rate_output.md).
+**! Additional Hardware is required !**     --     Please read [Analog Climb Rate option](OXS_Build_Vario#With_optional_analog_climb_rate_output).
 
 To activate this feature, tick the Analog climb rate checkbox and choose the Pin in the dropdown list.
 

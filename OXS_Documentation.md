@@ -6,7 +6,7 @@
 
 > ![OXS-OXSC_heading](images/OXS-OXSC_heading.jpg)
 
-> [Here is the documentation](OXS_Configuration.md) to both understand the different OXS options and set them easily with the OXS Configurator.
+> [Here is the documentation](OXS_Configuration) to both understand the different OXS options and set them easily with the OXS Configurator.
 
 
 > ## Configuring OpenTX ##
@@ -24,7 +24,7 @@
 
 > ![OXSv](images/OXSv.jpg)
 
-> Visit the Wiki Page [OXS Build Instructions](OXS_Build_Vario.md) to learn how to make an OpenXsensor Alti/Vario yourself.
+> Visit the Wiki Page [OXS Build Instructions](OXS_Build_Vario) to learn how to make an OpenXsensor Alti/Vario yourself.
 
 > ### Current sensor: ###
 

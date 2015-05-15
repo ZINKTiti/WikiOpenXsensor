@@ -50,7 +50,7 @@ Click and drag right or left in the field to alter the value, only integers are 
 
 When clicking on this button, the Configurator will perform a number of verifications and will warn you if there is a problem with your settings.
 
-The file destination is determined by the [OXS directory](OXS_Configuration#OXS_directory.md) setting. If it's not defined, the file will be written to the root of the Configurator executable folder.
+The file destination is determined by the [OXS directory](OXS_Configuration#OXS_directory) setting. If it's not defined, the file will be written to the root of the Configurator executable folder.
 
 
 ---
