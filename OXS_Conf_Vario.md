@@ -1,0 +1,123 @@
+# Understanding and Configuring OpenXsensor #
+
+## Vario settings ##
+
+One or two **[MS5611 barometric sensor](OXS_Build_Vario.md)** can be connected to OXS and provide altitude and vertical speed data.
+
+### RC remote functionalities ###
+
+![OXSC_vario_01](images/OXSC_vario_01.png)
+
+If the checkbox "PPM" is ticked, you will be able to control some parameters from your transmitter during the flight, using a switch and/or a potentiometer and a servo channel:
+  * changing vario sensitivity
+  * switching V.Speed type (more below)
+
+In this case, a receiver signal servo pin has to be connected to the Arduino pin chosen in the PPM Pin dropdown list.
+
+
+  * PPM range Min. = the minimum value of the ppm input (pulse length in microseconds ). (Standard OpenTX value is 988)
+  * PPM range Max. = the maximum value of the ppm input (pulse length in microseconds ). (Standard OpenTX value is 2012)
+
+_Note: This PPM section is shared between Vario and Air Speed sensors._
+
+
+
+![OXSC_vario_02](images/OXSC_vario_02.png)
+
+The PPM range for sensitivity parameters define the PPM range in which you will be able to adjust the sensitivity value:
+  * PPM range for sensitivity Min. = When Tx sends this value on the PPM channel, Sensitivity Min. (see below) will be replaced by PPM sensitivity Min.
+  * PPM range for sensitivity Max. = When Tx sends this value on the PPM channel, Sensitivity Max. (see below) will be replaced by PPM sensitivity Max.
+
+The PPM sensitivity parameters define the sensitivity range in which you will be able to adjust the sensitivity value:
+  * PPM sensitivity Min. = the sensitivity minimum value that can be assigned using PPM. (Standard value could be 20)
+  * PPM sensitivity Max. = the sensitivity maximum value that can be assigned using PPM. (Standard value could be 100)
+
+_Note : When Arduino detects a signal from TX, the parameters for the predefined sensitivity are automatically discarded and replaced by PPM sensitivity._
+
+_Important note : Sensitivity is changed based on the absolute value of PPM, so PPM = -25 has the same effect as PPM = 25. This is important in order to combine change in sensitivity with a switch on TX to select the V.Speed type switching._
+
+
+
+![OXSC_vario_03](images/OXSC_vario_03.png)
+
+The V.Speed type switching parameters let you choose what will be sent to TX between 2 among 3 different V.Speed calculations when you select "PPM V.Speed" in the OXS measurement list:
+  1. Vario 1        --> first ms5611
+  1. Vario 2        --> second ms5611
+  1. V1 + A.Speed   --> first ms5611 + Air Speed sensor compensation => vario with total energy compensation
+
+_Note : When not using PPM option, the first dropdown list remains active to let you choose the unique V.Speed type._
+
+The PPM V.Speed switching parameters define the PPM range in which you will be able to select the V.Speed type:
+
+When the ABSOLUTE value of PPM is between PPM V.Speed switching Min. and PPM V.Speed switching Max.
+  * OXS will switch to the first V.Speed type if  **PPM is POSITIVE**
+  * OXS will switch to the second V.Speed type if  **PPM is NEGATIVE**
+
+_Note: When the absolute value of PPM is outside this range, OXS will not switch between V.Speed type and keep the current one. This principle allows to use a switch on TX simultaneously with a pot, in order to control sensitivity **and** compensation._
+
+_Switching from positive to negative can be achieved on OpenTX with a mixer using MULTIPLY with weight -100%._
+
+_Sending a PPM value outside this range lets to instruct OXS to apply another order (e.g. resetting the airspeed offset), without switching the V.Speed type._
+
+
+---
+
+
+### Sensitivity ###
+
+![OXSC_vario_04](images/OXSC_vario_04.png)
+
+Sensitivity can be set between:
+  * 20 (conservative setting, reaction time = several seconds)
+  * 150 (fast but lot of errors, reaction time = much less than a second)
+
+50 is a standard setting when measuring small vertical speed (search for lift with a glider).
+
+OpenXsensor allows to automatically modify the sensitivity depending on the vertical speed:
+  * Sensitivity Min. = sensitivity value being used when vertical speed is lower than Sensitivity interpolated switching Min. (Standard value = 40)
+  * Sensitivity Max. = sensitivity value being used when vertical speed is higher than Sensitivity interpolated switching Max. (Standard value = 100)
+
+Sensitivity Max. can be set equal to Min. when higher sensitivity for high vertical speed is unwanted.
+
+  * Sensitivity interpolated switching (cm/s) Min. --> Sensitivity Min. applies when vertical speed is lower than this value. (Standard value = 20)
+  * Sensitivity interpolated switching (cm/s) Max. --> Sensitivity Max. applies when vertical speed is higher than this value. (Standard value = 100)
+
+Sensitivity is automatically interpolated between Sensitivity interpolated switching Min. and Sensitivity interpolated switching Max.
+
+
+---
+
+
+### Hysteresis ###
+
+![OXSC_vario_05](images/OXSC_vario_05.png)
+
+OXS can also apply some hysteresis on vertical speed changes.
+
+This parameter allows to avoid that transmitted vertical speed changes too often (which can result in bad sound alerts).
+
+It means that transmitted vertical speed will change only if measured vertical speed (after filtering) differs from previous transmitted value by more than the Hysteresis value. (Standard value can be 5 (5 cm/s), 0 means no hysteresis)
+
+
+---
+
+
+### Analog climb rate ###
+
+![OXSC_vario_06](images/OXSC_vario_06.png)
+
+OXS can also deliver the vertical speed as an analog signal that has to be connected to A1 or A2 on D series receivers.
+
+This can be useful if you have a receiver that has no digital communication pin (D6FR) or if it is already used by another sensor.
+
+**! Additional Hardware is required !**     --     Please read [Analog Climb Rate option](OXS_Build_Vario#With_optional_analog_climb_rate_output.md).
+
+To activate this feature, tick the Analog climb rate checkbox and choose the Pin in the dropdown list.
+
+Then set the Min. and Max. climb rate values (Range (m/s)) that you want to output to the receiver.
+
+  * Range Min. value or lower will apply 0 V to the receiver analog pin (A1 or A2).
+  * Range Max. value or higher will apply 3.2 V to the receiver analog pin (A1 or A2).
+
+
+---
