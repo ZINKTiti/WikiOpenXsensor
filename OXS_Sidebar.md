@@ -1,0 +1,11 @@
+  * [News](OXS_News)
+  * [OXS_Downloads Downloads]
+  * [OXS_Documentation Documentation]
+    * OXS Configuration
+      * [OXS_Configuration General settings]
+      * [OXS_Conf_Vario Vario settings]
+      * [OXS_Conf_DataSent DATA sent settings]
+    * OpenTX Configuration Coming soon...
+    * Buildings how-tos
+      * [OXS_Build_Vario OXS Alti/Vario]
+      * [https://code.google.com/p/openxvario/wiki/CurrentSensorModules Current sensor]
