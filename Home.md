@@ -1,4 +1,4 @@
-![OXS_Logo](images/OXS_Logo.png)
+![OXS_Logo](https://github.com/openXsensor/openXsensor/wiki/images/OXS_Logo.png)
 
 # [News](OXS_News) - [Downloads](OXS_Downloads) - [Documentation](OXS_Documentation) #
 
