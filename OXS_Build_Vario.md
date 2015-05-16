@@ -1,4 +1,4 @@
-# Building an !openXsensor Alti / Vario #
+# Building an openXsensor Alti / Vario #
 
 ## Disclaimer ##
 
