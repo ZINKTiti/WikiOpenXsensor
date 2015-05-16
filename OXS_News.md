@@ -2,7 +2,7 @@
 
 
 # News #
-
+  * 2015-05-15: New openXsensor home on GitHub
   * 2015-01-04: Wiki Updated [documentation](OXS_Configuration) for OXS Configurator v2.1
   * 2015-01-04: [Release !](OXS_Downloads) : OXS Configurator v2.1 -> The new OXS v2.x features can now be set !
   * 2014-09-05: [Releases !](OXS_Downloads) : OpenXsensor v2.5 + OXS Configurator v2.0 -> More infos in the Readme files
