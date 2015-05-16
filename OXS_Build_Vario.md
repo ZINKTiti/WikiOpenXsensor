@@ -103,8 +103,7 @@ More information on this option: **[Vario RC remote sensitivity](OXS_Conf_Vario#
 
 ## With optional analog climb rate output ##
 
-More information on this option: **[Vario Analog climb rate](OXS_Conf_Vario#Analog_climb_rate.md)**
-
+More information on this option: **[Vario Analog climb rate](OXS_Conf_Vario#Analog_climb_rate)**
 Before you connect pin 3 (or 11) of the Arduino to the receiver Ax pin, you need an electronic filter to convert the PWM signal to an analog DC voltage:
 
 ![OXS_Building_Vario_RC_Filter_01.png](images/OXS_Building_Vario_RC_Filter_01.png)
