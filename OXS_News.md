@@ -2,6 +2,7 @@
 
 
 # News #
+  * 2016-03-28: [Release !](OXS_Downloads) : OXS Configurator v3.0 -> click "About" to see the Readme !
   * 2016-01-19: Version 7.0 of openXsensor (Hott protocol, GPS, accelerometer/gyro sensor,...)
   * 2015-05-15: New openXsensor home on GitHub
   * 2015-01-04: Wiki Updated [documentation](OXS_Configuration) for OXS Configurator v2.1
