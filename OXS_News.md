@@ -2,6 +2,7 @@
 
 
 # News #
+  * 2017-02-18: Version 8.0 of openXsensor (Jeti protocol, BMP280O , ADS1115, ...) 
   * 2016-03-28: [Release !](OXS_Downloads) : OXS Configurator v3.0 -> click "About" to see the Readme !
   * 2016-01-19: Version 7.0 of openXsensor (Hott protocol, GPS, accelerometer/gyro sensor,...)
   * 2015-05-15: New openXsensor home on GitHub
