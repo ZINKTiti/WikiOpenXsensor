@@ -6,7 +6,7 @@
 
 > - Latest versions of openXsensor : 
 
-[OpenXsensor v8.0.1](https://github.com/openXsensor/openXsensor/releases/archive/v8.0.1.zip)
+[OpenXsensor v8.0.1](https://github.com/openXsensor/openXsensor/archive/v8.0.1.zip)
 
 Oldier vesions are available as release (click on release buttom on the home screen of the github site)
 
