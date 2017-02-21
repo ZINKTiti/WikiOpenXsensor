@@ -50,11 +50,12 @@ It is compatible with :
   * Can calculate glider ratio to improve glider setup while flying
   * Can generate several sequences of signal (e.g. for light sequencer)
   
-Note: Setup is done editing manually the file oXs_config.h  
+##Note:##  
+      Setup is done editing manually the file oXs_config.h  
       All details about the requirements and the way to configure oXs are given in the file oXs_config_description.h  
       Some explanations are given in wiki (but are not 100% up to date). It is hightly recommended to read oXs_config_description.h 
 
-Note: Latest version (recommended) of oXs is the branch "master".  
+Note: Latest version (recommended) of oXs is in the branch "master".  
       In oldier versions of openXsensor (oXs), it was possible to use a configurator program in order to create the config.h file.  
       The Wiki refers to this configurator. Still, after version 2.5, the configurator program has not been updated.
       So, when using the latest version of oXs (recommended), you must edit the config.h file with a text editor (or the Arduino IDE).
