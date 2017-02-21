@@ -50,7 +50,7 @@ It is compatible with :
   * Can calculate glider ratio to improve glider setup while flying
   * Can generate several sequences of signal (e.g. for light sequencer)
   
-Note: Setup is done editing manually the file oXs_config.h
+Note: Setup is done editing manually the file oXs_config.h  
       All details about the requirements and the way to configure oXs are given in the file oXs_config_description.h  
       Some explanations are given in wiki (but are not 100% up to date). It is hightly recommended to read oXs_config_description.h 
 
