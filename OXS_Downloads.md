@@ -3,7 +3,18 @@
 
 # Downloads #
 
-> - Latest versions:
+
+> - Latest versions of openXsensor : 
+
+[OpenXsensor v8.0.1](https://github.com/openXsensor/openXsensor/releases/archive/v8.0.1.zip)
+
+Oldier vesions are available as release (click on release buttom on the home screen of the github site)
+
+For releases 2 and 3, it is possible to edit the oXs_config.h file with a pc application named oXs Configurator (available in another repository).  
+Still this application is not compatible with following releases.
+
+
+> - Latest versions :
 
 | **OpenXsensor** | **OXS Configurator** |
 |:----------------|:---------------------|
